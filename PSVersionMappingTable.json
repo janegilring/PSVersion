@@ -1,0 +1,29 @@
+{
+    "5.0.10586.51":  {
+                      "Major":  5,
+                      "Minor":  0,
+                      "Build":  10586,
+                      "Revision":  51,
+                      "MajorRevision":  0,
+                      "MinorRevision":  51,
+                      "FriendlyName": "Windows PowerShell 5 RTM 1602"
+                  },
+    "5.0.10586.117":  {
+                      "Major":  5,
+                      "Minor":  0,
+                      "Build":  10586,
+                      "Revision":  117,
+                      "MajorRevision":  0,
+                      "MinorRevision":  51,
+                      "FriendlyName": "Windows PowerShell 5 RTM 1512"
+                  },
+    "4.0":  {
+                      "Major":  4,
+                      "Minor":  0,
+                      "Build":  -1,
+                      "Revision":  -1,
+                      "MajorRevision":  -1,
+                      "MinorRevision":  -1,
+                      "FriendlyName": "Windows PowerShell 4 RTM"
+                  }                    
+}
