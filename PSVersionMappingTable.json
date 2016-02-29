@@ -25,5 +25,24 @@
                       "MajorRevision":  -1,
                       "MinorRevision":  -1,
                       "FriendlyName": "Windows PowerShell 4 RTM"
-                  }                    
+                  },
+    "3.0":  {
+                      "Major":  3,
+                      "Minor":  0,
+                      "Build":  -1,
+                      "Revision":  -1,
+                      "MajorRevision":  -1,
+                      "MinorRevision":  -1,
+                      "FriendlyName": "Windows PowerShell 3 RTM"
+                  },
+    "2.0":  {
+                      "Major":  2,
+                      "Minor":  0,
+                      "Build":  -1,
+                      "Revision":  -1,
+                      "MajorRevision":  -1,
+                      "MinorRevision":  -1,
+                      "FriendlyName": "Windows PowerShell 2 RTM"
+                  }                 
+                    
 }
