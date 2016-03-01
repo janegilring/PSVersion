@@ -75,14 +75,12 @@
 
    $Params.ComputerName = $ComputerNames
    
-         try
-        {
         
         Invoke-Command @Params {
 
              $PSVersionTable
 
-            } -ErrorAction Stop | Select-Object @{Name='PSComputerName';e={$_.PSComputerName}},@{Name='PSVersion';e={$_.PSVersion.ToString()}},@{Name='PSVersionFriendlyName';e={
+            } -ErrorAction SilentlyContinue -ErrorVariable failed | Select-Object @{Name='PSComputerName';e={$_.PSComputerName}},@{Name='PSVersion';e={$_.PSVersion.ToString()}},@{Name='PSVersionFriendlyName';e={
 
                   $FriendlyName = $mappingtable.$($_.PSVersion.ToString()).FriendlyName
 
@@ -98,15 +96,22 @@
 
                 }
              }
-        }
-        catch
-        {
-            [pscustomobject]@{
-            PSComputerName = $_.TargetObject
-            PSVersion = 'N/A - PS Remoting failed'
-            PSVersionFriendlyName = 'N/A - PS Remoting failed'
+        
+       if ($failed) {
+
+            foreach ($item in $failed)
+            {
+
+                [pscustomobject]@{
+                PSComputerName = $item.TargetObject
+                PSVersion = 'N/A - PS Remoting failed'
+                PSVersionFriendlyName = 'N/A - PS Remoting failed'
+
             }
-        } 
+            }
+
+
+        }
 
    }
     
