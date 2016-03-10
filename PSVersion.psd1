@@ -27,7 +27,7 @@ CompanyName = 'PS Community'
 Copyright = '(c) 2016 Jan Egil Ring. All rights reserved.'
 
 # Description of the functionality provided by this module
-Description = 'Tools Module'
+Description = 'Contains a function (Get-PSVersion) and a mapping-table to get a friendly name for the PowerShell version number. For examlpe, "Windows PowerShell 5 RTM 1602" instead of "5.0.10586.117".'
 
 # Minimum version of the Windows PowerShell engine required by this module
 # PowerShellVersion = '3.0'
