@@ -1,4 +1,13 @@
 {
+     "5.0.10586.122":  {
+                      "Major":  5,
+                      "Minor":  0,
+                      "Build":  10586,
+                      "Revision":  122,
+                      "MajorRevision":  0,
+                      "MinorRevision":  122,
+                      "FriendlyName": "Windows PowerShell 5 RTM (Windows 10 1511)"
+                  },
     "5.0.10586.117":  {
                       "Major":  5,
                       "Minor":  0,
@@ -16,7 +25,7 @@
                       "MajorRevision":  0,
                       "MinorRevision":  51,
                       "FriendlyName": "Windows PowerShell 5 RTM 1512"
-                  },                  ,
+                  },
     "5.0.10514.6":  {
                       "Major":  5,
                       "Minor":  0,
