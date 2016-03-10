@@ -66,7 +66,7 @@ Description = 'Tools Module'
 # NestedModules = @()
 
 # Functions to export from this module
-FunctionsToExport = '*'
+FunctionsToExport = 'Get-PSVersion'
 
 # Cmdlets to export from this module
 CmdletsToExport = '*'
