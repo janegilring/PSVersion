@@ -12,7 +12,7 @@
 RootModule = 'PSVersion.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.0'
+ModuleVersion = '1.2'
 
 # ID used to uniquely identify this module
 GUID = 'ed7130ec-f8a2-4530-8382-38650275f0d8'
@@ -27,7 +27,7 @@ CompanyName = 'PS Community'
 Copyright = '(c) 2016 Jan Egil Ring. All rights reserved.'
 
 # Description of the functionality provided by this module
-Description = 'Contains a function (Get-PSVersion) and a mapping-table to get a friendly name for the PowerShell version number. For examlpe, "Windows PowerShell 5 RTM 1602" instead of "5.0.10586.117".'
+Description = 'Contains a function (Get-PSVersion) and a mapping-table to get a friendly name for the PowerShell version number. For example, "Windows PowerShell 5 RTM 1602" instead of "5.0.10586.117".'
 
 # Minimum version of the Windows PowerShell engine required by this module
 # PowerShellVersion = '3.0'
@@ -66,7 +66,7 @@ Description = 'Contains a function (Get-PSVersion) and a mapping-table to get a 
 # NestedModules = @()
 
 # Functions to export from this module
-FunctionsToExport = 'Get-PSVersion'
+FunctionsToExport = 'Get-PSVersion','Update-PSVersionData'
 
 # Cmdlets to export from this module
 CmdletsToExport = '*'
