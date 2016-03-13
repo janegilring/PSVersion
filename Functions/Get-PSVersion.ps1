@@ -68,11 +68,16 @@ Update-PSVersionData
     param (
         [Parameter(Mandatory=$false,
                    ValueFromPipeline=$true,
-                   ValueFromPipelineByPropertyName=$true)]
+                   ValueFromPipelineByPropertyName=$true,
+                   ParameterSetName = "Default"
+                   )]
         [string[]]$ComputerName=$env:computername,
-
+        [parameter(ParameterSetName = "Default")]
         [System.Management.Automation.Credential()]$Credential = [System.Management.Automation.PSCredential]::Empty,
-        [switch]$UpdatePSVersionData
+        [parameter(ParameterSetName = "Default")]
+        [switch]$UpdatePSVersionData,
+        [parameter(ParameterSetName = "ListVersion")]
+        [switch]$ListVersion
     )
 
     BEGIN {        
@@ -105,6 +110,16 @@ Update-PSVersionData
 
             $mappingtable = Get-Content -Path $mappingtablepath | ConvertFrom-Json
 
+            If ($PSBoundParameters['ListVersion']) {
+            
+            Write-Verbose -Message "Parameter Set: ListVersion"
+            Write-Verbose -Message "mappingtablepath: $mappingtablepath"
+
+            return $mappingtable
+            break
+
+             }
+
             $ComputerNames = @()
 
         }
@@ -125,8 +140,9 @@ Update-PSVersionData
 
             } -ErrorAction SilentlyContinue -ErrorVariable failed | Select-Object @{Name='PSComputerName';e={$_.PSComputerName}},@{Name='PSVersion';e={$_.PSVersion.ToString()}},@{Name='PSVersionFriendlyName';e={
 
-                  $FriendlyName = $mappingtable.$($_.PSVersion.ToString()).FriendlyName
-
+                  $PSVersion = $_.PSVersion.ToString()
+                  $FriendlyName = ($mappingtable | Where-Object {$_.Name -eq $PSVersion}).FriendlyName
+                  
                   if ($FriendlyName) {
 
                   $FriendlyName

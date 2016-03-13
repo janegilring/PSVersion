@@ -1,75 +1,35 @@
-{
-     "5.0.10586.122":  {
-                      "Major":  5,
-                      "Minor":  0,
-                      "Build":  10586,
-                      "Revision":  122,
-                      "MajorRevision":  0,
-                      "MinorRevision":  122,
+[
+       {
+                      "Name" : "5.0.10586.122",
                       "FriendlyName": "Windows PowerShell 5 RTM (Windows 10 1511)"
                   },
-    "5.0.10586.117":  {
-                      "Major":  5,
-                      "Minor":  0,
-                      "Build":  10586,
-                      "Revision":  117,
-                      "MajorRevision":  0,
-                      "MinorRevision":  117,
+     {
+                      "Name" : "5.0.10586.117",
                       "FriendlyName": "Windows PowerShell 5 RTM 1602"
                   },
-    "5.0.10586.51":  {
-                      "Major":  5,
-                      "Minor":  0,
-                      "Build":  10586,
-                      "Revision":  51,
-                      "MajorRevision":  0,
-                      "MinorRevision":  51,
+      {
+                      "Name" : "5.0.10586.51",
                       "FriendlyName": "Windows PowerShell 5 RTM 1512"
                   },
-    "5.0.10514.6":  {
-                      "Major":  5,
-                      "Minor":  0,
-                      "Build":  10514,
-                      "Revision":  6,
-                      "MajorRevision":  0,
-                      "MinorRevision":  6,
+     {
+                      "Name": "5.0.10514.6", 
                       "FriendlyName": "Windows PowerShell 5 Production Preview 1508"
                   }, 
-    "5.0.10018.0":  {
-                      "Major":  5,
-                      "Minor":  0,
-                      "Build":  10018,
-                      "Revision":  0,
-                      "MajorRevision":  0,
-                      "MinorRevision":  0,
+      {
+                      "Name": "5.0.10018.0", 
                       "FriendlyName": "Windows PowerShell 5 Preview 1502"
                   },
-    "4.0":  {
-                      "Major":  4,
-                      "Minor":  0,
-                      "Build":  -1,
-                      "Revision":  -1,
-                      "MajorRevision":  -1,
-                      "MinorRevision":  -1,
+      {
+                      "Name": "4.0", 
                       "FriendlyName": "Windows PowerShell 4 RTM"
                   },
-    "3.0":  {
-                      "Major":  3,
-                      "Minor":  0,
-                      "Build":  -1,
-                      "Revision":  -1,
-                      "MajorRevision":  -1,
-                      "MinorRevision":  -1,
+      {
+                      "Name": "3.0", 
                       "FriendlyName": "Windows PowerShell 3 RTM"
                   },
-    "2.0":  {
-                      "Major":  2,
-                      "Minor":  0,
-                      "Build":  -1,
-                      "Revision":  -1,
-                      "MajorRevision":  -1,
-                      "MinorRevision":  -1,
+    {
+                      "Name": "2.0", 
                       "FriendlyName": "Windows PowerShell 2 RTM"
                   }                 
                     
-}
+]
