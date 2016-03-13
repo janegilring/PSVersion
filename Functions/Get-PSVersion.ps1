@@ -68,14 +68,11 @@ Update-PSVersionData
     param (
         [Parameter(Mandatory=$false,
                    ValueFromPipeline=$true,
-                   ValueFromPipelineByPropertyName=$true,
-                   ParameterSetName = "Default"
+                   ValueFromPipelineByPropertyName=$true
                    )]
         [string[]]$ComputerName=$env:computername,
-        [parameter(ParameterSetName = "Default")]
         [System.Management.Automation.Credential()]$Credential = [System.Management.Automation.PSCredential]::Empty,
-        [parameter(ParameterSetName = "Default")]
-        [switch]$UpdatePSVersionData,
+                [switch]$UpdatePSVersionData,
         [parameter(ParameterSetName = "ListVersion")]
         [switch]$ListVersion
     )
