@@ -1,15 +1,19 @@
 [
        {
                       "Name" : "5.0.10586.122",
-                      "FriendlyName": "Windows PowerShell 5 RTM (Windows 10 1511)"
+                      "FriendlyName": "Windows PowerShell 5 RTM (Windows 10 1511 + KB3140743 1603)"
                   },
      {
                       "Name" : "5.0.10586.117",
-                      "FriendlyName": "Windows PowerShell 5 RTM 1602"
+                      "FriendlyName": "Windows PowerShell 5 RTM 1602 (Windows Server 2012 R2, Windows Server 2012, Windows 2008 R2 SP1, Windows 8.1, and Windows 7 SP1)"
                   },
+     {
+                      "Name" : "5.0.10586.63",
+                      "FriendlyName": "Windows PowerShell 5 RTM (Windows 10 1511 + KB3135173 1602)"
+                  },                  
       {
                       "Name" : "5.0.10586.51",
-                      "FriendlyName": "Windows PowerShell 5 RTM 1512"
+                      "FriendlyName": "Windows PowerShell 5 RTM 1512 (Windows Server 2012 R2, Windows Server 2012, Windows 2008 R2 SP1, Windows 8.1, and Windows 7 SP1)"
                   },
      {
                       "Name": "5.0.10514.6", 
@@ -30,6 +34,10 @@
     {
                       "Name": "2.0", 
                       "FriendlyName": "Windows PowerShell 2 RTM"
+                  },
+    {
+                      "Name": "1.0", 
+                      "FriendlyName": "Windows PowerShell 1 RTM"
                   }                 
                     
 ]
