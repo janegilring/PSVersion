@@ -58,6 +58,7 @@ Update-PSVersionData
  
 .OUTPUTS
     Selected.System.Collections.Hashtable
+    System.Management.Automation.PSCustomObject
  
 .NOTES
     Author:  Jan Egil Ring
