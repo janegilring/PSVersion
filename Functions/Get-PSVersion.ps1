@@ -79,7 +79,8 @@ Update-PSVersionData
 
     BEGIN {        
         $Params = @{}
- 
+
+
         If ($PSBoundParameters['Credential']) {
             $Params.Credential = $Credential
         }
@@ -117,6 +118,7 @@ Update-PSVersionData
 
              }
 
+        
             $ComputerNames = @()
 
         }
@@ -127,6 +129,30 @@ Update-PSVersionData
    
    }
    END {
+
+               If (-not ($PSBoundParameters['ComputerName'])) {
+            
+            Write-Verbose -Message 'Parameter -ComputerName not specified, skipping PS Remoting and retriving information from localhost directly from $PSVersionTable'
+                   
+                   $PSVersion = $PSVersionTable.PSVersion.ToString()
+                   $FriendlyName = ($mappingtable | Where-Object {$_.Name -eq $PSVersion}).FriendlyName
+                  
+                  if (-not ($FriendlyName)) {
+
+                  $FriendlyName = "Unknown $($_.PSVersion)"
+
+                  }
+
+                
+                $output =  [pscustomobject]@{
+                PSComputerName = $env:ComputerName
+                PSVersion = $PSVersionTable.PSVersion.ToString()
+                PSVersionFriendlyName = $FriendlyName
+                }
+
+                return $output
+
+        }
 
    $Params.ComputerName = $ComputerNames
    
@@ -160,7 +186,7 @@ Update-PSVersionData
 
                 [pscustomobject]@{
                 PSComputerName = $item.TargetObject
-                PSVersion = 'N/A - PS Remoting failed'
+                PSVersion = $null
                 PSVersionFriendlyName = 'N/A - PS Remoting failed'
 
             }
