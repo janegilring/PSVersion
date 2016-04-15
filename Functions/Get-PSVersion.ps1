@@ -131,7 +131,7 @@ Update-PSVersionData
    }
    END {
 
-               If (-not ($PSBoundParameters['ComputerName'])) {
+               If (-not ($PSBoundParameters['ComputerName']) -or $ComputerName -eq $env:computername -or $ComputerName -eq '127.0.0.1' -or $ComputerName -eq 'localhost' -or $ComputerName -eq '.') {
             
             Write-Verbose -Message 'Parameter -ComputerName not specified, skipping PS Remoting and retriving information from localhost directly from $PSVersionTable'
                    

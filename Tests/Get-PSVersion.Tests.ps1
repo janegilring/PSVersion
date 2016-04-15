@@ -19,6 +19,26 @@ Describe 'Get-PSVersion' {
     }
 
     }
+
+    Context "Omits PS Remoting for localhost" {
+
+    Disable-PSRemoting -Force -WarningAction SilentlyContinue
+
+    It "Omits PS Remoting for localhost" {
+    (Get-PSVersion -ComputerName localhost).PSVersion | Should Be $PSVersionTable.PSVersion.ToString()
+    }
+    It 'Omits PS Remoting for $env:computername' {
+    (Get-PSVersion -ComputerName $env:computername).PSVersion | Should Be $PSVersionTable.PSVersion.ToString()
+    }
+    It "Omits PS Remoting for ." {
+    (Get-PSVersion -ComputerName .).PSVersion | Should Be $PSVersionTable.PSVersion.ToString()
+    }
+    It "Omits PS Remoting for localhost" {
+    (Get-PSVersion -ComputerName 127.0.0.1).PSVersion | Should Be $PSVersionTable.PSVersion.ToString()
+    }
+        Enable-PSRemoting -Force
+    }
+
   }
 
 }
