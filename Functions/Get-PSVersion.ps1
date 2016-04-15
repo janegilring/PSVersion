@@ -107,7 +107,7 @@ Update-PSVersionData
 
             }
 
-            $mappingtable = Get-Content -Path $mappingtablepath | ConvertFrom-Json
+            $mappingtable = Get-Content -Path $mappingtablepath -Raw | ConvertFrom-Json
 
             If ($PSBoundParameters['ListVersion']) {
             
