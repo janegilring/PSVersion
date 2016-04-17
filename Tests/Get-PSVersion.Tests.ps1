@@ -41,4 +41,24 @@ Describe 'Get-PSVersion' {
 
   }
 
+  Describe "PSVersionData" {
+
+  Context 'DataFile' {
+
+  It 'Should exist' {
+
+  "$PSScriptRoot\..\PSVersionMappingTable.json" | Should Exist
+
+        }
+
+  It 'Should be successfully converted to System.Object from Json-format' {
+
+  (Get-Content "$PSScriptRoot\..\PSVersionMappingTable.json" -Raw | ConvertFrom-Json) | Should Not BeNullOrEmpty
+
+        }
+
+     }
+
+  }
+
 }
