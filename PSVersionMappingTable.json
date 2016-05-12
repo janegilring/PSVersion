@@ -30,6 +30,11 @@
                       "ApplicableOS": "Windows Server 2012 R2"
                   },
       {
+                      "Name": "5.0.9883.0", 
+                      "FriendlyName": "Windows PowerShell 5 Preview November 2014",
+                      "ApplicableOS": "Windows Server 2012 R2, Windows Server 2012, Windows 8.1"
+                  },
+      {
                       "Name": "4.0", 
                       "FriendlyName": "Windows PowerShell 4 RTM",
                       "ApplicableOS": "Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 SP1, Windows 8.1, and Windows 7 SP1"
