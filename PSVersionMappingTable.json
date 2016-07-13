@@ -1,5 +1,10 @@
 [
-       {
+    {
+                      "Name" : "5.0.10586.494",
+                      "FriendlyName": "Windows PowerShell 5 RTM",
+                      "ApplicableOS": "Windows 10 1511 + KB3172985 1607"
+                  },
+     {
                       "Name" : "5.0.10586.122",
                       "FriendlyName": "Windows PowerShell 5 RTM",
                       "ApplicableOS": "Windows 10 1511 + KB3140743 1603"
