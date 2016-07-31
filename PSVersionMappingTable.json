@@ -1,4 +1,9 @@
 [
+   {
+                      "Name" : "5.1.14393.0",
+                      "FriendlyName": "Windows PowerShell 5.1 RTM",
+                      "ApplicableOS": "Windows 10 Anniversary Update"
+                  },
     {
                       "Name" : "5.0.10586.494",
                       "FriendlyName": "Windows PowerShell 5 RTM",
