@@ -1,9 +1,14 @@
 [
    {
                       "Name" : "5.1.14393.0",
-                      "FriendlyName": "Windows PowerShell 5.1 RTM",
+                      "FriendlyName": "Windows PowerShell 5.1 Preview",
                       "ApplicableOS": "Windows 10 Anniversary Update"
                   },
+   {
+                      "Name" : "5.1.14300.1000",
+                      "FriendlyName": "Windows PowerShell 5.1 Preview",
+                      "ApplicableOS": "Windows Server 2016 Technical Preview 5"
+                  },                  
     {
                       "Name" : "5.0.10586.494",
                       "FriendlyName": "Windows PowerShell 5 RTM",
