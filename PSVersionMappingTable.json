@@ -1,8 +1,13 @@
 [
+    {
+                      "Name" : "5.1.14393.187",
+                      "FriendlyName": "Windows PowerShell 5.1 Preview",
+                      "ApplicableOS": "Windows 10 1607 + KB3189866 1609"
+                  },
    {
                       "Name" : "5.1.14393.0",
                       "FriendlyName": "Windows PowerShell 5.1 Preview",
-                      "ApplicableOS": "Windows 10 Anniversary Update"
+                      "ApplicableOS": "Windows 10 1607 (Anniversary Update)"
                   },
    {
                       "Name" : "5.1.14300.1000",
