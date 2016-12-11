@@ -133,27 +133,44 @@ Update-PSVersionData
 
                If (-not ($PSBoundParameters['ComputerName']) -or $ComputerName -eq $env:computername -or $ComputerName -eq '127.0.0.1' -or $ComputerName -eq 'localhost' -or $ComputerName -eq '.') {
             
-            Write-Verbose -Message 'Parameter -ComputerName not specified, skipping PS Remoting and retriving information from localhost directly from $PSVersionTable'
+                 Write-Verbose -Message 'Parameter -ComputerName not specified, skipping PS Remoting and retriving information from localhost directly from $PSVersionTable'
                    
                    $PSVersion = $PSVersionTable.PSVersion.ToString()
                    $FriendlyName = ($mappingtable | Where-Object {$_.Name -eq $PSVersion}).FriendlyName
                   
+                  
                   if (-not ($FriendlyName)) {
+                  
+                    Write-Verbose -Message 'FriendlyName not found in mappingtable, trying to update the local mapping table using Update-PSVersionData...'
+                    
+                    Update-PSVersionData -ErrorAction SilentlyContinue
+                    
+                    $mappingtable = Get-Content -Path $mappingtablepath -Raw | ConvertFrom-Json
+                    $FriendlyName = ($mappingtable | Where-Object {$_.Name -eq $PSVersion}).FriendlyName
 
-                  $FriendlyName = "Unknown $($_.PSVersion)"
+                    if (-not ($FriendlyName)) {
 
+                      Write-Verbose -Message 'FriendlyName still not found in mappingtable, setting value to Unknown'
+
+                      $FriendlyName = "Unknown $($_.PSVersion)"
+
+                    } else {
+                    
+                      Write-Verbose -Message 'FriendlyName found after calling Update-PSVersionData'
+
+                    }
                   }
 
                 
-                $output =  [pscustomobject]@{
-                PSComputerName = $env:ComputerName
-                PSVersion = $PSVersionTable.PSVersion.ToString()
-                PSVersionFriendlyName = $FriendlyName
-                }
+                 $output =  [pscustomobject]@{
+                   PSComputerName = $env:ComputerName
+                   PSVersion = $PSVersionTable.PSVersion.ToString()
+                   PSVersionFriendlyName = $FriendlyName
+                 }
 
-                return $output
+                 return $output
 
-        }
+               }
 
    $Params.ComputerName = $ComputerNames
    

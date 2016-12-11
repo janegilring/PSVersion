@@ -12,7 +12,7 @@
 RootModule = 'PSVersion.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.6'
+ModuleVersion = '1.7'
 
 # ID used to uniquely identify this module
 GUID = 'ed7130ec-f8a2-4530-8382-38650275f0d8'
@@ -69,13 +69,13 @@ Description = 'Contains a function (Get-PSVersion) and a mapping-table to get a 
 FunctionsToExport = 'Get-PSVersion','Update-PSVersionData'
 
 # Cmdlets to export from this module
-CmdletsToExport = '*'
+CmdletsToExport = ''
 
 # Variables to export from this module
-VariablesToExport = '*'
+VariablesToExport = ''
 
 # Aliases to export from this module
-AliasesToExport = '*'
+AliasesToExport = ''
 
 # List of all modules packaged with this module
 # ModuleList = @()
@@ -102,7 +102,8 @@ PrivateData = @{
 
         # ReleaseNotes of this module
         ReleaseNotes = '
-        1.6 - Added Windows PowerShell 5.1 Preview to version mapping table.
+        1.7 - Added logic to update local version mapping table when FriendlyName is unknown.
+        1.6.1 - Added build 5.1.14393.479 (Windows 10 1607 + KB3201845 1612) to version mapping table.
         '
 
         # External dependent modules of this module
