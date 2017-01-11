@@ -2,7 +2,7 @@
     {
                       "Name" : "5.1.14393.693",
                       "FriendlyName": "Windows PowerShell 5.1 Preview",
-                      "ApplicableOS": "Windows 10 1607 + KB3213986 1701, Windows Server 2016"
+                      "ApplicableOS": "Windows 10 1607 + KB3213986 1701, Windows Server 2016 + KB3213986 1701"
                   },
    {
                       "Name" : "5.1.14393.576",
