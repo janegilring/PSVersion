@@ -1,5 +1,10 @@
 [
     {
+                      "Name" : "5.1.15063.138",
+                      "FriendlyName": "Windows PowerShell 5.1",
+                      "ApplicableOS": "Windows 10 Creators Update (1703)"
+                  },
+    {
                       "Name" : "5.1.14393.1066",
                       "FriendlyName": "Windows PowerShell 5.1",
                       "ApplicableOS": "Windows 10 1607 + KB4015217 1704, Windows Server 2016 + KB4015217 1704"
@@ -37,7 +42,7 @@
    {
                       "Name" : "5.1.14393.0",
                       "FriendlyName": "Windows PowerShell 5.1 Preview",
-                      "ApplicableOS": "Windows 10 Anniversary Update, Windows Server 2016"
+                      "ApplicableOS": "Windows 10 Anniversary Update (1607), Windows Server 2016"
                   },
    {
                       "Name" : "5.1.14300.1000",
