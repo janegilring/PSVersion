@@ -5,6 +5,11 @@
                       "ApplicableOS": "Windows 10 Creators Update (1703)"
                   },
     {
+                      "Name" : "5.1.14409.1005",
+                      "FriendlyName": "Windows PowerShell 5.1",
+                      "ApplicableOS": "Windows 7 Service Pack 1, Windows 8.1, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2"
+                  },                  
+    {
                       "Name" : "5.1.14393.1066",
                       "FriendlyName": "Windows PowerShell 5.1",
                       "ApplicableOS": "Windows 10 1607 + KB4015217 1704, Windows Server 2016 + KB4015217 1704"
