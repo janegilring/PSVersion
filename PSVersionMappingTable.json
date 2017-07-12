@@ -1,7 +1,7 @@
 [
      {
                       "Name" : "6.0.0-beta",
-                      "FriendlyName": "Microsoft PowerShell 6.0",
+                      "FriendlyName": "Microsoft PowerShell 6.0 beta",
                       "ApplicableOS": "Windows 7-10, Ubuntu 14.04/16.04, Debian 8, CentOS 7, Red Hat Enterprise Linux 7, OpenSUSE 42.1, macOS 10.12, Kali Linux"
                   }, 
     {
