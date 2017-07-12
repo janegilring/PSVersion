@@ -12,7 +12,7 @@
 RootModule = 'PSVersion.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.7'
+ModuleVersion = '1.8'
 
 # ID used to uniquely identify this module
 GUID = 'ed7130ec-f8a2-4530-8382-38650275f0d8'
@@ -102,6 +102,7 @@ PrivateData = @{
 
         # ReleaseNotes of this module
         ReleaseNotes = '
+        1.8 - Added new build numbers added since April 2017.
         1.7 - Added logic to update local version mapping table when FriendlyName is unknown.
         1.6.1 - Added build 5.1.14393.479 (Windows 10 1607 + KB3201845 1612) to version mapping table.
         '
