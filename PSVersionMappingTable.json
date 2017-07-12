@@ -1,6 +1,46 @@
 [
      {
-                      "Name" : "5.1.15063.168",
+                      "Name" : "6.0.0-beta",
+                      "FriendlyName": "Microsoft PowerShell 6.0",
+                      "ApplicableOS": "Windows 7-10, Ubuntu 14.04/16.04, Debian 8, CentOS 7, Red Hat Enterprise Linux 7, OpenSUSE 42.1, macOS 10.12, Kali Linux"
+                  }, 
+    {
+                      "Name" : "5.1.15063.483",
+                      "FriendlyName": "Windows PowerShell 5.1",
+                      "ApplicableOS": "Windows 10 1703 + KB4025342 1707"
+                  },
+     {
+                      "Name" : "5.1.15063.447",
+                      "FriendlyName": "Windows PowerShell 5.1",
+                      "ApplicableOS": "Windows 10 1703 + KB4022716 1706"
+                  },                    
+     {
+                      "Name" : "5.1.15063.414",
+                      "FriendlyName": "Windows PowerShell 5.1",
+                      "ApplicableOS": "Windows 10 1703 + KB4022725 1706"
+                  }, 
+                  {
+                      "Name" : "5.1.15063.413",
+                      "FriendlyName": "Windows PowerShell 5.1",
+                      "ApplicableOS": "Windows 10 1703 + KB4022725 1706"
+                  }, 
+                  {
+                      "Name" : "5.1.15063.332",
+                      "FriendlyName": "Windows PowerShell 5.1",
+                      "ApplicableOS": "Windows 10 1703 + KB4020102 1705"
+                  }, 
+                  {
+                      "Name" : "5.1.15063.297",
+                      "FriendlyName": "Windows PowerShell 5.1",
+                      "ApplicableOS": "Windows 10 1703 + KB4016871 1705"
+                  },
+     {
+                      "Name" : "5.1.15063.296",
+                      "FriendlyName": "Windows PowerShell 5.1",
+                      "ApplicableOS": "Windows 10 1703 + KB4016871 1705"
+                  },
+     {
+                      "Name" : "5.1.15063.250",
                       "FriendlyName": "Windows PowerShell 5.1",
                       "ApplicableOS": "Windows 10 1703 + KB4016240 1704"
                   },
