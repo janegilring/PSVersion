@@ -1,163 +1,233 @@
 [
-     {
-                      "Name" : "6.0.0-beta",
-                      "FriendlyName": "Microsoft PowerShell 6.0 beta",
-                      "ApplicableOS": "Windows 7-10, Ubuntu 14.04/16.04, Debian 8, CentOS 7, Red Hat Enterprise Linux 7, OpenSUSE 42.1, macOS 10.12, Kali Linux"
-                  }, 
     {
-                      "Name" : "5.1.15063.483",
-                      "FriendlyName": "Windows PowerShell 5.1",
-                      "ApplicableOS": "Windows 10 1703 + KB4025342 1707"
-                  },
-     {
-                      "Name" : "5.1.15063.447",
-                      "FriendlyName": "Windows PowerShell 5.1",
-                      "ApplicableOS": "Windows 10 1703 + KB4022716 1706"
-                  },                    
-     {
-                      "Name" : "5.1.15063.414",
-                      "FriendlyName": "Windows PowerShell 5.1",
-                      "ApplicableOS": "Windows 10 1703 + KB4022725 1706"
-                  }, 
-                  {
-                      "Name" : "5.1.15063.413",
-                      "FriendlyName": "Windows PowerShell 5.1",
-                      "ApplicableOS": "Windows 10 1703 + KB4022725 1706"
-                  }, 
-                  {
-                      "Name" : "5.1.15063.332",
-                      "FriendlyName": "Windows PowerShell 5.1",
-                      "ApplicableOS": "Windows 10 1703 + KB4020102 1705"
-                  }, 
-                  {
-                      "Name" : "5.1.15063.297",
-                      "FriendlyName": "Windows PowerShell 5.1",
-                      "ApplicableOS": "Windows 10 1703 + KB4016871 1705"
-                  },
-     {
-                      "Name" : "5.1.15063.296",
-                      "FriendlyName": "Windows PowerShell 5.1",
-                      "ApplicableOS": "Windows 10 1703 + KB4016871 1705"
-                  },
-     {
-                      "Name" : "5.1.15063.250",
-                      "FriendlyName": "Windows PowerShell 5.1",
-                      "ApplicableOS": "Windows 10 1703 + KB4016240 1704"
-                  },
+        "Name": "6.0.0-beta",
+        "FriendlyName": "Microsoft PowerShell 6.0 beta",
+        "ApplicableOS": "Windows 7-10, Ubuntu 14.04/16.04, Debian 8, CentOS 7, Red Hat Enterprise Linux 7, OpenSUSE 42.1, macOS 10.12, Kali Linux",
+        "PsFileVersion": "",
+        "PsProductVersion": ""
+    },
     {
-                      "Name" : "5.1.15063.138",
-                      "FriendlyName": "Windows PowerShell 5.1",
-                      "ApplicableOS": "Windows 10 Creators Update (1703)"
-                  },
+        "Name": "5.1.15063.502",
+        "FriendlyName": "Windows PowerShell 5.1",
+        "ApplicableOS": "Windows 10 Unknown Patch Status",
+        "PsFileVersion": "10.0.15063.0",
+        "PsProductVersion": "10.0.15063.0"
+    },
     {
-                      "Name" : "5.1.14409.1005",
-                      "FriendlyName": "Windows PowerShell 5.1",
-                      "ApplicableOS": "Windows 7 Service Pack 1, Windows 8.1, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2"
-                  },                  
+        "Name": "5.1.15063.483",
+        "FriendlyName": "Windows PowerShell 5.1",
+        "ApplicableOS": "Windows 10 1703 + KB4025342 1707",
+        "PsFileVersion": "",
+        "PsProductVersion": ""
+    },
     {
-                      "Name" : "5.1.14393.1066",
-                      "FriendlyName": "Windows PowerShell 5.1",
-                      "ApplicableOS": "Windows 10 1607 + KB4015217 1704, Windows Server 2016 + KB4015217 1704"
-                  },
+        "Name": "5.1.15063.447",
+        "FriendlyName": "Windows PowerShell 5.1",
+        "ApplicableOS": "Windows 10 1703 + KB4022716 1706",
+        "PsFileVersion": "",
+        "PsProductVersion": ""
+    },
     {
-                      "Name" : "5.1.14393.953",
-                      "FriendlyName": "Windows PowerShell 5.1",
-                      "ApplicableOS": "Windows 10 1607 + KB4013429 1703, Windows Server 2016 + KB4013429 1703"
-                  },
+        "Name": "5.1.15063.414",
+        "FriendlyName": "Windows PowerShell 5.1",
+        "ApplicableOS": "Windows 10 1703 + KB4022725 1706",
+        "PsFileVersion": "",
+        "PsProductVersion": ""
+    },
     {
-                      "Name" : "5.1.14393.693",
-                      "FriendlyName": "Windows PowerShell 5.1 Preview",
-                      "ApplicableOS": "Windows 10 1607 + KB3213986 1701, Windows Server 2016 + KB3213986 1701"
-                  },
-   {
-                      "Name" : "5.1.14393.576",
-                      "FriendlyName": "Windows PowerShell 5.1 Preview",
-                      "ApplicableOS": "Windows 10 1607 + KB3206632 1612"
-                  },
-   {
-                      "Name" : "5.1.14393.479",
-                      "FriendlyName": "Windows PowerShell 5.1 Preview",
-                      "ApplicableOS": "Windows 10 1607 + KB3201845 1612"
-                  },
-   {
-                      "Name" : "5.1.14393.206",
-                      "FriendlyName": "Windows PowerShell 5.1 Preview",
-                      "ApplicableOS": "Windows Server 2016 + KB3192366 1609"
-                  },
-   {
-                      "Name" : "5.1.14393.187",
-                      "FriendlyName": "Windows PowerShell 5.1 Preview",
-                      "ApplicableOS": "Windows 10 1607 + KB3189866 1609"
-                  },
-   {
-                      "Name" : "5.1.14393.0",
-                      "FriendlyName": "Windows PowerShell 5.1 Preview",
-                      "ApplicableOS": "Windows 10 Anniversary Update (1607), Windows Server 2016"
-                  },
-   {
-                      "Name" : "5.1.14300.1000",
-                      "FriendlyName": "Windows PowerShell 5.1 Preview",
-                      "ApplicableOS": "Windows Server 2016 Technical Preview 5"
-                  },                  
+        "Name": "5.1.15063.413",
+        "FriendlyName": "Windows PowerShell 5.1",
+        "ApplicableOS": "Windows 10 1703 + KB4022725 1706",
+        "PsFileVersion": "",
+        "PsProductVersion": ""
+    },
     {
-                      "Name" : "5.0.10586.494",
-                      "FriendlyName": "Windows PowerShell 5 RTM",
-                      "ApplicableOS": "Windows 10 1511 + KB3172985 1607"
-                  },
-     {
-                      "Name" : "5.0.10586.122",
-                      "FriendlyName": "Windows PowerShell 5 RTM",
-                      "ApplicableOS": "Windows 10 1511 + KB3140743 1603"
-                  },
-     {
-                      "Name" : "5.0.10586.117",
-                      "FriendlyName": "Windows PowerShell 5 RTM 1602",
-                      "ApplicableOS": "Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 SP1, Windows 8.1, and Windows 7 SP1"
-                  },
-     {
-                      "Name" : "5.0.10586.63",
-                      "FriendlyName": "Windows PowerShell 5 RTM",
-                      "ApplicableOS": "Windows 10 1511 + KB3135173 1602"
-                  },                  
-      {
-                      "Name" : "5.0.10586.51",
-                      "FriendlyName": "Windows PowerShell 5 RTM 1512",
-                      "ApplicableOS": "Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 SP1, Windows 8.1, and Windows 7 SP1"
-                  },
-     {
-                      "Name": "5.0.10514.6", 
-                      "FriendlyName": "Windows PowerShell 5 Production Preview 1508",
-                      "ApplicableOS": "Windows Server 2012 R2"
-                  }, 
-      {
-                      "Name": "5.0.10018.0", 
-                      "FriendlyName": "Windows PowerShell 5 Preview 1502",
-                      "ApplicableOS": "Windows Server 2012 R2"
-                  },
-      {
-                      "Name": "5.0.9883.0", 
-                      "FriendlyName": "Windows PowerShell 5 Preview November 2014",
-                      "ApplicableOS": "Windows Server 2012 R2, Windows Server 2012, Windows 8.1"
-                  },
-      {
-                      "Name": "4.0", 
-                      "FriendlyName": "Windows PowerShell 4 RTM",
-                      "ApplicableOS": "Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 SP1, Windows 8.1, and Windows 7 SP1"
-                  },
-      {
-                      "Name": "3.0", 
-                      "FriendlyName": "Windows PowerShell 3 RTM",
-                      "ApplicableOS": "Windows Server 2012, Windows Server 2008 R2 SP1, Windows 8, and Windows 7 SP1"
-                  },
+        "Name": "5.1.15063.332",
+        "FriendlyName": "Windows PowerShell 5.1",
+        "ApplicableOS": "Windows 10 1703 + KB4020102 1705",
+        "PsFileVersion": "",
+        "PsProductVersion": ""
+    },
     {
-                      "Name": "2.0", 
-                      "FriendlyName": "Windows PowerShell 2 RTM",
-                      "ApplicableOS": "Windows Server 2008 R2 SP1 and Windows 7"
-                  },
+        "Name": "5.1.15063.297",
+        "FriendlyName": "Windows PowerShell 5.1",
+        "ApplicableOS": "Windows 10 1703 + KB4016871 1705",
+        "PsFileVersion": "",
+        "PsProductVersion": ""
+    },
     {
-                      "Name": "1.0", 
-                      "FriendlyName": "Windows PowerShell 1 RTM",
-                      "ApplicableOS": "Windows Server 2008, Windows Server 2003, Windows Vista, Windows XP"
-                  }                 
-                    
+        "Name": "5.1.15063.296",
+        "FriendlyName": "Windows PowerShell 5.1",
+        "ApplicableOS": "Windows 10 1703 + KB4016871 1705",
+        "PsFileVersion": "",
+        "PsProductVersion": ""
+    },
+    {
+        "Name": "5.1.15063.250",
+        "FriendlyName": "Windows PowerShell 5.1",
+        "ApplicableOS": "Windows 10 1703 + KB4016240 1704",
+        "PsFileVersion": "",
+        "PsProductVersion": ""
+    },
+    {
+        "Name": "5.1.15063.138",
+        "FriendlyName": "Windows PowerShell 5.1",
+        "ApplicableOS": "Windows 10 Creators Update (1703)",
+        "PsFileVersion": "",
+        "PsProductVersion": ""
+    },
+    {
+        "Name": "5.1.14409.1005",
+        "FriendlyName": "Windows PowerShell 5.1",
+        "ApplicableOS": "Windows 7 Service Pack 1, Windows 8.1, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2",
+        "PsFileVersion": "",
+        "PsProductVersion": ""
+    },
+    {
+        "Name": "5.1.14393.953",
+        "FriendlyName": "Windows PowerShell 5.1",
+        "ApplicableOS": "Windows 10 1607 + KB4013429 1703, Windows Server 2016 + KB4013429 1703",
+        "PsFileVersion": "",
+        "PsProductVersion": ""
+    },
+    {
+        "Name": "5.1.14393.693",
+        "FriendlyName": "Windows PowerShell 5.1 Preview",
+        "ApplicableOS": "Windows 10 1607 + KB3213986 1701, Windows Server 2016 + KB3213986 1701",
+        "PsFileVersion": "",
+        "PsProductVersion": ""
+    },
+    {
+        "Name": "5.1.14393.576",
+        "FriendlyName": "Windows PowerShell 5.1 Preview",
+        "ApplicableOS": "Windows 10 1607 + KB3206632 1612",
+        "PsFileVersion": "",
+        "PsProductVersion": ""
+    },
+    {
+        "Name": "5.1.14393.479",
+        "FriendlyName": "Windows PowerShell 5.1 Preview",
+        "ApplicableOS": "Windows 10 1607 + KB3201845 1612",
+        "PsFileVersion": "",
+        "PsProductVersion": ""
+    },
+    {
+        "Name": "5.1.14393.206",
+        "FriendlyName": "Windows PowerShell 5.1 Preview",
+        "ApplicableOS": "Windows Server 2016 + KB3192366 1609",
+        "PsFileVersion": "",
+        "PsProductVersion": ""
+    },
+    {
+        "Name": "5.1.14393.187",
+        "FriendlyName": "Windows PowerShell 5.1 Preview",
+        "ApplicableOS": "Windows 10 1607 + KB3189866 1609",
+        "PsFileVersion": "",
+        "PsProductVersion": ""
+    },
+    {
+        "Name": "5.1.14393.1066",
+        "FriendlyName": "Windows PowerShell 5.1",
+        "ApplicableOS": "Windows 10 1607 + KB4015217 1704, Windows Server 2016 + KB4015217 1704",
+        "PsFileVersion": "",
+        "PsProductVersion": ""
+    },
+    {
+        "Name": "5.1.14393.0",
+        "FriendlyName": "Windows PowerShell 5.1 Preview",
+        "ApplicableOS": "Windows 10 Anniversary Update (1607), Windows Server 2016",
+        "PsFileVersion": "",
+        "PsProductVersion": ""
+    },
+    {
+        "Name": "5.1.14300.1000",
+        "FriendlyName": "Windows PowerShell 5.1 Preview",
+        "ApplicableOS": "Windows Server 2016 Technical Preview 5",
+        "PsFileVersion": "",
+        "PsProductVersion": ""
+    },
+    {
+        "Name": "5.0.9883.0",
+        "FriendlyName": "Windows PowerShell 5 Preview November 2014",
+        "ApplicableOS": "Windows Server 2012 R2, Windows Server 2012, Windows 8.1",
+        "PsFileVersion": "",
+        "PsProductVersion": ""
+    },
+    {
+        "Name": "5.0.10586.63",
+        "FriendlyName": "Windows PowerShell 5 RTM",
+        "ApplicableOS": "Windows 10 1511 + KB3135173 1602",
+        "PsFileVersion": "",
+        "PsProductVersion": ""
+    },
+    {
+        "Name": "5.0.10586.51",
+        "FriendlyName": "Windows PowerShell 5 RTM 1512",
+        "ApplicableOS": "Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 SP1, Windows 8.1, and Windows 7 SP1",
+        "PsFileVersion": "",
+        "PsProductVersion": ""
+    },
+    {
+        "Name": "5.0.10586.494",
+        "FriendlyName": "Windows PowerShell 5 RTM",
+        "ApplicableOS": "Windows 10 1511 + KB3172985 1607",
+        "PsFileVersion": "",
+        "PsProductVersion": ""
+    },
+    {
+        "Name": "5.0.10586.122",
+        "FriendlyName": "Windows PowerShell 5 RTM",
+        "ApplicableOS": "Windows 10 1511 + KB3140743 1603",
+        "PsFileVersion": "",
+        "PsProductVersion": ""
+    },
+    {
+        "Name": "5.0.10586.117",
+        "FriendlyName": "Windows PowerShell 5 RTM 1602",
+        "ApplicableOS": "Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 SP1, Windows 8.1, and Windows 7 SP1",
+        "PsFileVersion": "",
+        "PsProductVersion": ""
+    },
+    {
+        "Name": "5.0.10514.6",
+        "FriendlyName": "Windows PowerShell 5 Production Preview 1508",
+        "ApplicableOS": "Windows Server 2012 R2",
+        "PsFileVersion": "",
+        "PsProductVersion": ""
+    },
+    {
+        "Name": "5.0.10018.0",
+        "FriendlyName": "Windows PowerShell 5 Preview 1502",
+        "ApplicableOS": "Windows Server 2012 R2",
+        "PsFileVersion": "",
+        "PsProductVersion": ""
+    },
+    {
+        "Name": "4.0",
+        "FriendlyName": "Windows PowerShell 4 RTM",
+        "ApplicableOS": "Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 SP1, Windows 8.1, and Windows 7 SP1",
+        "PsFileVersion": "",
+        "PsProductVersion": ""
+    },
+    {
+        "Name": "3.0",
+        "FriendlyName": "Windows PowerShell 3 RTM",
+        "ApplicableOS": "Windows Server 2012, Windows Server 2008 R2 SP1, Windows 8, and Windows 7 SP1",
+        "PsFileVersion": "",
+        "PsProductVersion": ""
+    },
+    {
+        "Name": "2.0",
+        "FriendlyName": "Windows PowerShell 2 RTM",
+        "ApplicableOS": "Windows Server 2008 R2 SP1 and Windows 7",
+        "PsFileVersion": "",
+        "PsProductVersion": ""
+    },
+    {
+        "Name": "1.0",
+        "FriendlyName": "Windows PowerShell 1 RTM",
+        "ApplicableOS": "Windows Server 2008, Windows Server 2003, Windows Vista, Windows XP",
+        "PsFileVersion": "",
+        "PsProductVersion": ""
+    }
 ]
