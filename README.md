@@ -1,4 +1,8 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/swph5y5fp6ruvy2b?svg=true)](https://ci.appveyor.com/project/janegilring/psversion)
+
+
+| Branch | AzurePipelines CI | AppVeyor CI |
+| --- | --- | --- |
+| master | [![Build Status](https://dev.azure.com/janegilring/PSVersion/_apis/build/status/janegilring.PSVersion)](https://dev.azure.com/janegilring/PSVersion/_build/latest?definitionId=2) | [![Build status](https://ci.appveyor.com/api/projects/status/swph5y5fp6ruvy2b?svg=true)](https://ci.appveyor.com/project/janegilring/psversion)
 
 # PSVersion
 
