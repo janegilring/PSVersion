@@ -12,7 +12,7 @@
 RootModule = 'PSVersion.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.8'
+ModuleVersion = '1.9'
 
 # ID used to uniquely identify this module
 GUID = 'ed7130ec-f8a2-4530-8382-38650275f0d8'
@@ -24,7 +24,7 @@ Author = 'Jan Egil Ring'
 CompanyName = 'PS Community'
 
 # Copyright statement for this module
-Copyright = '(c) 2016 Jan Egil Ring. All rights reserved.'
+Copyright = '(c) 2019 Jan Egil Ring. All rights reserved.'
 
 # Description of the functionality provided by this module
 Description = 'Contains a function (Get-PSVersion) and a mapping-table to get a friendly name for the PowerShell version number. For example, "Windows PowerShell 5 RTM 1602" instead of "5.0.10586.117".'
