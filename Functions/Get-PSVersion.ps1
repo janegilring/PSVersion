@@ -187,7 +187,7 @@ Update-PSVersionData
 
 
             $output = [pscustomobject]@{
-                PSComputerName        = $env:ComputerName
+                PSComputerName        = hostname
                 PSVersion             = $PSVersionTable.PSVersion.ToString()
                 PSVersionFriendlyName = $FriendlyName
             }
