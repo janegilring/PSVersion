@@ -35,6 +35,7 @@ task CopyModuleFiles {
     #Copy Module files
     Copy-Item -Path @(
         '.\README.md'
+        '.\PSVersion.Format.ps1xml'
         '.\PSVersion.psd1'
         '.\PSVersion.psm1'
         '.\PSVersionMappingTable.json'
