@@ -12,7 +12,7 @@
 RootModule = 'PSVersion.psm1'
 
 # Version number of this module.
-ModuleVersion = '2.0'
+ModuleVersion = '2.1.0'
 
 # ID used to uniquely identify this module
 GUID = 'ed7130ec-f8a2-4530-8382-38650275f0d8'
@@ -62,7 +62,7 @@ PowerShellVersion = '5.1'
 # TypesToProcess = @()
 
 # Format files (.ps1xml) to be loaded when importing this module
-# FormatsToProcess = @()
+FormatsToProcess = 'PSVersion.Format.ps1xml'
 
 # Modules to import as nested modules of the module specified in RootModule/ModuleToProcess
 # NestedModules = @()
