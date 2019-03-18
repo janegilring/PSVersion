@@ -130,7 +130,8 @@ Update-PSVersionData
             Write-Verbose -Message "Parameter Set: ListVersion"
             Write-Verbose -Message "mappingtablepath: $mappingtablepath"
 
-            return $mappingtable
+            $mappingtable | Foreach-Object {Add-ObjectDetail -InputObject $_ -TypeName 'PSVersionInfo'}
+
             break
 
         }
@@ -152,7 +153,7 @@ Update-PSVersionData
         If (-not ($PSBoundParameters['ComputerName']) -or $ComputerName -eq $env:computername -or $ComputerName -eq '127.0.0.1' -or $ComputerName -eq 'localhost' -or $ComputerName -eq '.')
         {
 
-            Write-Verbose -Message 'Parameter -ComputerName not specified, skipping PS Remoting and retriving information from localhost directly from $PSVersionTable'
+            Write-Verbose -Message 'Parameter -ComputerName not specified, skipping PS Remoting and retrieving information from localhost directly from $PSVersionTable'
 
             $PSVersion = $PSVersionTable.PSVersion.ToString()
             $FriendlyName = ($mappingtable | Where-Object {$_.Name -eq $PSVersion}).FriendlyName
@@ -191,12 +192,16 @@ Update-PSVersionData
                 PSVersionFriendlyName = $FriendlyName
             }
 
-            return $output
+            $output | Foreach-Object {Add-ObjectDetail -InputObject $_ -TypeName 'PSVersionInfo'}
 
         }
 
-        $Params.ComputerName = $ComputerNames
+        $LocalHost = @($env:computername,'127.0.0.1','localhost','.')
+        $ComputerNames = $ComputerNames | Where-Object {$PSItem -notin  $LocalHost}
 
+        if ($ComputerNames) {
+
+        $Params.ComputerName = $ComputerNames
 
         Invoke-Command @Params {
 
@@ -221,7 +226,10 @@ Update-PSVersionData
                 }
 
             }
-        }
+        } | Add-ObjectDetail -TypeName 'PSVersionInfo'
+
+    }
+
 
         if ($failed)
         {
@@ -233,8 +241,7 @@ Update-PSVersionData
                     PSComputerName        = $item.TargetObject
                     PSVersion             = $null
                     PSVersionFriendlyName = 'N/A - PS Remoting failed'
-
-                }
+                } | Add-ObjectDetail -TypeName 'PSVersionInfo'
             }
 
 
