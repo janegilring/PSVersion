@@ -25,7 +25,7 @@ steps:
     testRunner: NUnit
     searchFolder: '$(Common.TestResultsDirectory)'
 
-- powershell: Invoke-Build -Configuration 'Production' -Task Clean, UpdateHelp, CopyModuleFiles, PublishModule
+- powershell: Invoke-Build -Configuration 'Production' -Task Clean, UpdateHelp, UpdateManifest, CopyModuleFiles, PublishModule
   displayName: 'Publish PowerShell Module'
   env:
     psgallery: $(NugetAPIKey)
