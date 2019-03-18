@@ -130,7 +130,7 @@ Update-PSVersionData
             Write-Verbose -Message "Parameter Set: ListVersion"
             Write-Verbose -Message "mappingtablepath: $mappingtablepath"
 
-            $mappingtable | Foreach-Object {Add-ObjectDetail -InputObject $_ -TypeName 'PSVersionInfo'}
+            $mappingtable | Add-ObjectDetail -TypeName 'PSVersionInfoList'
 
             break
 
