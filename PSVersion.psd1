@@ -32,7 +32,7 @@ Description = 'Contains a function (Get-PSVersion) and a mapping-table to get a 
 CompatiblePSEditions = 'Core','Desktop'
 
 # Minimum version of the Windows PowerShell engine required by this module
-# PowerShellVersion = '3.0'
+PowerShellVersion = '5.1'
 
 # Name of the Windows PowerShell host required by this module
 # PowerShellHostName = ''
@@ -94,7 +94,7 @@ PrivateData = @{
         # Tags = @()
 
         # A URL to the license for this module.
-        LicenseUri = 'https://raw.githubusercontent.com/janegilring/PSVersion/master/LICENSE'
+        LicenseUri = 'https://github.com/janegilring/PSVersion/blob/master/LICENSE'
 
         # A URL to the main website for this project.
         ProjectUri = 'https://github.com/janegilring/PSVersion'
