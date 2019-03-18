@@ -29,6 +29,34 @@ Because of this difficulty, the PSVersion module was created. It contains the Ge
 You can read more about the background and see examples in the following article on PowerShell Magazine:
 http://www.powershellmagazine.com/2016/03/10/decoding-powershell-build-numbers
 
+# Installation
+
+The module is published to the PowerShell Gallery, which means you can install it using the following command from the PowerShellGet module:
+
+`Install-Module -Name PSVersion`
+
+or the following if you want it installed the current user' s profile rather than the system wide location:
+
+`Install-Module -Name PSVersion -Scope CurrentUser`
+
+When a new version is released with bug fixes or new functionality you can update to the latest version simply by typing the following command:
+
+`Update-Module -Name PSVersion`
+
+PowerShellGet is included by default in PowerShell V5, and available downlevel for PowerShell 3.0 and 4.0.
+
+## Requirements
+
+- Windows PowerShell 5.1, PowerShell Core 6.0 or later on the computer the module is installed on
+- PowerShell Remoting must be enabled if targeting remote computers
+
+## Usage
+
+The module contains the following functions:
+
+- **Get-PSVersion** - Returns information about the PowerShell version for the specified computer (defaults to localhost). By specifying the -ListVersion parameter all versions will be returned.
+- **Update-PSVersionData** -  Updates mapping table used by Get-PSVersion, a function to map information from $PSVersionTable in order to retrieve friendly names for PowerShell build numbers
+
 ## Change log
 
 - 2.1.0 Added support for PowerShell Core. Added custom formatting. Bugfix: Remote computers not processed when localhost is specified.
